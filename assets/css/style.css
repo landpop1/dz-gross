@@ -1415,3 +1415,141 @@ body.theme-dark .btn-transparent-dark:hover {
     background: #f4a261;
     color: #121212;
 }
+/* ===== Тёмная тема: фоны секций ===== */
+body.theme-dark .about,
+body.theme-dark .team,
+body.theme-dark .catalog,
+body.theme-dark .service-detail,
+body.theme-dark .sale-page,
+body.theme-dark .auth-page,
+body.theme-dark .sale-hero,
+body.theme-dark .sale-offers,
+body.theme-dark .world-tours {
+    background-color: #121212;
+}
+
+body.theme-dark .about h2,
+body.theme-dark .team h2,
+body.theme-dark .catalog h2,
+body.theme-dark .service-detail h2,
+body.theme-dark .sale-page h2,
+body.theme-dark .auth-page h2,
+body.theme-dark .world-tours h2,
+body.theme-dark .sale-offers h2 {
+    color: #ffffff;
+}
+
+/* Карточка авторизации */
+body.theme-dark .auth-card {
+    background: #1e1e1e;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+}
+
+body.theme-dark .auth-content h2 {
+    color: #ffffff;
+}
+
+body.theme-dark .auth-content p {
+    color: #b0b0b0;
+}
+
+body.theme-dark .auth-form label {
+    color: #cccccc;
+}
+
+body.theme-dark .auth-form input {
+    background: #2a2a2a;
+    border-color: #3a3a3a;
+    color: #e0e0e0;
+}
+
+body.theme-dark .auth-form input:focus {
+    background: #333333;
+    border-color: #f4a261;
+}
+
+body.theme-dark .tab-btn {
+    background: #1e1e1e;
+    border-color: #3a3a3a;
+    color: #e0e0e0;
+}
+
+body.theme-dark .tab-btn.active {
+    background: #f4a261;
+    color: #121212;
+    border-color: #f4a261;
+}
+
+body.theme-dark .checkbox-wrapper {
+    color: #b0b0b0;
+}
+
+body.theme-dark .auth-links a {
+    color: #f4a261;
+}
+
+/* Карточки */
+body.theme-dark .card__content h3,
+body.theme-dark .world__card h3,
+body.theme-dark .team__card h3,
+body.theme-dark .service-info h2 {
+    color: #ffffff;
+}
+
+body.theme-dark .world__card p,
+body.theme-dark .team__card p,
+body.theme-dark .card__content p,
+body.theme-dark .service-info p {
+    color: #b0b0b0;
+}
+
+body.theme-dark .service-detail {
+    background: #1e1e1e;
+}
+
+/* Кнопки */
+body.theme-dark .btn-card {
+    border-color: #f4a261;
+    color: #f4a261;
+}
+
+body.theme-dark .btn-card:hover {
+    background: #f4a261;
+    color: #121212;
+}
+
+body.theme-dark .btn-auth {
+    background: #f4a261;
+    color: #121212;
+}
+
+body.theme-dark .btn-auth:hover {
+    background: #e76f51;
+}
+
+/* Sale-hero */
+body.theme-dark .sale-hero__title {
+    color: #ffffff;
+}
+
+body.theme-dark .sale-hero__subtitle {
+    color: #999999;
+}
+
+body.theme-dark .sale-hero__rating .reviews-count {
+    color: #999999;
+}
+
+/* Footer: доп. контакты и соцсети */
+body.theme-dark .footer__contacts h4,
+body.theme-dark .footer__social h4 {
+    color: #ffffff;
+}
+
+body.theme-dark .footer__contacts a {
+    color: #b0b0b0;
+}
+
+body.theme-dark .footer__contacts a:hover {
+    color: #f4a261;
+}
