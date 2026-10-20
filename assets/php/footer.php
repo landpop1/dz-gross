@@ -20,7 +20,6 @@ if (!isset($basePath)) {
                     </div>
                 </div>
             </div>
-
             <div class="footer__nav">
                 <h4>Навигация</h4>
                 <a href="<?php echo $basePath; ?>index.php">Главная</a>
@@ -29,7 +28,6 @@ if (!isset($basePath)) {
                 <a href="#">Блог</a>
                 <a href="<?php echo $basePath; ?>pages/login.php">Вход</a>
             </div>
-
             <div class="footer__contacts">
                 <h4>Информация</h4>
                 <a href="#">О нас</a>
@@ -39,8 +37,31 @@ if (!isset($basePath)) {
             </div>
         </div>
 
+        <!-- ЗАДАНИЕ 4: Текущая дата и дни до Нового года -->
         <div class="footer__bottom">
-            <p>&copy; 2026 Активный горизонт. Все права защищены.</p>
+            <p>&copy; <?php echo date('Y'); ?> Активный горизонт. Все права защищены.</p>
+
+            <?php
+            // Получаем текущую дату
+            $today = date('d.m.Y');
+
+            // Определяем следующий Новый год (1 января следующего года)
+            $currentYear = (int)date('Y');
+            $newYearTimestamp = mktime(0, 0, 0, 1, 1, $currentYear + 1);
+
+            // Текущий timestamp
+            $now = time();
+
+            // Вычисляем разницу в секундах и переводим в дни
+            $secondsToNewYear = $newYearTimestamp - $now;
+            $daysToNewYear = (int)ceil($secondsToNewYear / (60 * 60 * 24));
+
+            // Выводим результат
+            echo '<p style="margin-top: 10px;">';
+            echo '📅 Сегодня: <strong>' . $today . '</strong><br>';
+            echo '🎄 До Нового года осталось: <strong>' . $daysToNewYear . ' дн.</strong>';
+            echo '</p>';
+            ?>
         </div>
     </div>
 </footer>
